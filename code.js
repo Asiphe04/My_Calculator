@@ -69,3 +69,11 @@ document.addEventListener('keydown', function(event) {
     clearResult();
   }
 });
+  // Function to perform backspace
+  function backspace() {
+    resultElement.value = resultElement.value.slice(0, -1);
+}
+ // Check if the key is the Backspace key
+ if (key === 'Backspace') {
+    backspace();
+ }

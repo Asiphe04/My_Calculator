@@ -1,16 +1,25 @@
-body{
-    background-color: chocolate;
+body {
+  background-color: grey;
+text-align: center;
 }
-h1{text-align: center;}
-button{margin:10px;
-font-size:30px ;
-background-color: grey;
+h1 {
+  text-align: center;
+}
+button {
+  margin: 5px;
+  font-size: 40px;
+  background-color: grey;
+  /* border-radius: 40%; */
+  color: aquamarine;
+}
+.buttons {
+  text-align: center;
 
 
 }
-.buttons{
-    text-align: center;
-background: linear-gradient(GREY, BLACK);
+
+input {
+  font-size: 40px;
+  width: 300px;
 }
 
-input{font-size: 50px;}
