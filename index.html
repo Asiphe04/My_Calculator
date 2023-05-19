@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>CALCULATOR V.2</h1>
+    <div class="buttons">
+      <br />
+      <br />
+      <input type="text" id="result" readonly />
+      <br />
+      <br />
+      <br />
+      
+      <button id="btn-1" onclick="appendNumber(1)">1</button>
+      <button id="" onclick="appendNumber(2)">2</button>
+      <button id="" onclick="appendNumber(3)">3</button>
+      <br />
+      <button id="" onclick="appendNumber(4)">4</button>
+      <button id="" onclick="appendNumber(5)">5</button>
+      <button id="" onclick="appendNumber(6)">6</button>
+      <br />
+      <button id="" onclick="appendNumber(7)">7</button>
+      <button id="" onclick="appendNumber(8)">8</button>
+      <button id="" onclick="appendNumber(9)">9</button>
+      <br />
+      <button id="" onclick="appendNumber(0)">0</button>
+      <br />
+      <button id="" onclick="performOperation('+')">+</button>
+      <button id="" onclick="performOperation('-')">-</button>
+      <button id="" onclick="performOperation('*')">*</button>
+      <button id="" onclick="performOperation('/')">/</button>
+      <button id="" onclick="performOperation('%')">%</button>
+      <button onclick="performOperation('.')">.</button>
+      <br />
+
+      <br />
+      <button onclick="clearResult()">AC</button>
+      <button onclick="calculate()">=</button>
+    </div>
+    <script src="/code.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+body{
+    background-color: chocolate;
+}
+h1{text-align: center;}
+button{margin:10px;
+font-size:30px ;
+background-color: grey;
+
+
+}
+.buttons{
+    text-align: center;
+background: linear-gradient(GREY, BLACK);
+}
+
+input{font-size: 50px;}
