@@ -76,4 +76,10 @@ document.addEventListener('keydown', function(event) {
  // Check if the key is the Backspace key
  if (key === 'Backspace') {
     backspace();
+    // Check if the key is the Delete key
+  if (key === 'Delete') {
+    event.preventDefault(); // Prevent the default behavior of the Delete key
+    clearInput();
+  }
  }
+ 

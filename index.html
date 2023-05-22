@@ -8,8 +8,10 @@
     <title>Calculator</title>
   </head>
   <body>
+    <h1>CALCULATOR</h1>
     <div class="container">
-      <h1>CALCULATOR</h1>
+      <br />
+      <br />
 
       <input class="text-center" type="text" id="result" readonly />
       <br />
@@ -17,28 +19,73 @@
       <br />
       <div class="buttons text-center">
         <button id="btn-clear" onclick="clearResult()">AC</button>
-        <button id="btn-percent" onclick="performOperation('%')">%</button>
-        <button id="btn-divide" onclick="performOperation('/')">/</button>
+        <button class="btn-symbol" id="bracket1" onclick="appendNumber('(')">
+          (
+        </button>
+        <button class="btn-symbol" id="bracket2" onclick="appendNumber(')')">
+          )
+        </button>
+        <button
+          id="btn-percent"
+          class="btn-symbol"
+          onclick="performOperation('%')"
+        >
+          %
+        </button>
+        <button
+          id="btn-divide"
+          class="btn-symbol"
+          onclick="performOperation('/')"
+        >
+          /
+        </button>
         <br />
         <button id="btn-7" onclick="appendNumber(7)">7</button>
         <button id="btn-8" onclick="appendNumber(8)">8</button>
         <button id="btn-9" onclick="appendNumber(9)">9</button>
-        <button id="btn-multiply" onclick="performOperation('*')">*</button>
+        <button
+          id="btn-multiply"
+          class="btn-symbol"
+          onclick="performOperation('*')"
+        >
+          *
+        </button>
         <br />
         <button id="btn-4" onclick="appendNumber(4)">4</button>
         <button id="btn-5" onclick="appendNumber(5)">5</button>
         <button id="btn-6" onclick="appendNumber(6)">6</button>
-        <button id="btn-minus" onclick="performOperation('-')">-</button>
+        <button
+          id="btn-minus"
+          class="btn-symbol"
+          onclick="performOperation('-')"
+        >
+          -
+        </button>
         <br />
         <button id="btn-1" onclick="appendNumber(1)">1</button>
         <button id="btn-2" onclick="appendNumber(2)">2</button>
         <button id="btn-3" onclick="appendNumber(3)">3</button>
-        <button id="btn-plus" onclick="performOperation('+')">+</button>
+        <button
+          id="btn-plus"
+          class="btn-symbol"
+          onclick="performOperation('+')"
+        >
+          +
+        </button>
         <br />
         <button id="btn-0" onclick="appendNumber(0)">0</button>
-        <button id="btn-dot" onclick="performOperation('.')">.</button>
-        <button id="btn-calc" onclick="calculate()">=</button>
-        <button onclick="backspace()">Back</button>
+        <button id="delete" onclick="backspace()">Del</button>
+        <button id="btn-dot" class="btn-symbol" onclick="performOperation('.')">
+          .
+        </button>
+
+        <button id="btn-calc" class="btn-symbol" onclick="calculate()">
+          =
+        </button>
+
+        <br />
+        <br />
+        <br />
       </div>
     </div>
     <script src="/code.js"></script>
