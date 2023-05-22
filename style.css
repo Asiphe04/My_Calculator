@@ -16,10 +16,13 @@ h1 {
 button {
   margin: 5px;
   font-size: 50px;
-  background-color: darkgray;
+  background-color: grey;
   color: white;
   border-radius: 20px;
   width: 100px;
+}
+button:hover {
+  background-color: darkgray;
 }
 .buttons {
   text-align: center;
@@ -33,18 +36,27 @@ input {
   font-size: 40px;
   width: 450px;
   height: 80px;
-  background-color: gray;
-  color: white;
+  background-color: white;
+  color: black;
 }
 /* Buttons */
 #btn-clear {
   background-color: green;
 }
+#btn-clear:hover {
+  background-color: darkgreen;
+}
 .btn-symbol {
   background-color: blue;
 }
+.btn-symbol:hover {
+  background-color: darkblue;
+}
 #delete {
   background-color: red;
+}
+#delete:hover {
+  background-color: darkred;
 }
 #bracket1 {
   width: 50px;
