@@ -3,13 +3,12 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 h1 {
-  text-align: center;
-  color: blue;
-  background-color: yellowgreen;
+ 
+  color: red;
+  text-decoration: underline;
   width: 700px;
   font-size: 40px;
 }
@@ -42,6 +41,7 @@ input {
 /* Buttons */
 #btn-clear {
   background-color: green;
+  width: 150px;
 }
 #btn-clear:hover {
   background-color: darkgreen;
@@ -58,9 +58,32 @@ input {
 #delete:hover {
   background-color: darkred;
 }
-#bracket1 {
-  width: 50px;
+
+#btn-divide {
+  width: 150px;
 }
-#bracket2 {
-  width: 50px;
+#btn-percent {
+  width: 110px;
+}
+
+/* Media quries */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+    width: 90%;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  input {
+    font-size: 20px;
+    width: 200px;
+  }
+
+  button {
+    font-size: 25px;
+  }
 }

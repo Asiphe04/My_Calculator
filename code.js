@@ -1,7 +1,7 @@
 // Get the result element
 const resultElement = document.getElementById('result');
 
-// Function to append a number to the result
+// Function to append a number or operator to the result
 function appendNumber(number) {
   resultElement.value += number;
 }
@@ -15,6 +15,7 @@ function performOperation(operator) {
 function clearResult() {
   resultElement.value = '';
 }
+
 
 // Function to calculate the result
 function calculate() {
@@ -40,8 +41,9 @@ function calculatePercentage() {
 
 // Function to add decimal point
 function addDecimalPoint() {
-  if (!resultElement.value.includes('.')) {
+  if (!dotClicked && !resultElement.value.includes('.')) {
     resultElement.value += '.';
+    dotClicked = true; 
   }
 }
 
@@ -54,8 +56,8 @@ document.addEventListener('keydown', function(event) {
     appendNumber(key);
   }
 
-  // Check if the key is an operator (+, -, *, /, ., %)
-  if (['+', '-', '*', '/','.','%',].includes(key)) {
+  // Check if the key is an operator (+, -, *, /)
+  if (['+', '-', '*', '/'].includes(key)) {
     performOperation(key);
   }
 
@@ -64,16 +66,17 @@ document.addEventListener('keydown', function(event) {
     calculate();
   }
 
-  // Check if the key is the Escape key
-  if (key === 'Escape') {
-    clearResult();
+ 
+
+  // Check if the key is the Backspace key
+  if (key === 'Backspace') {
+    event.preventDefault(); 
+    resultElement.value = resultElement.value.slice(0, -1);
+  }
+
+  // Check if the key is the Delete key
+  if (key === 'Delete') {
+    event.preventDefault();
+    clearInput();
   }
 });
-  // Function to perform backspace
-  function backspace() {
-    resultElement.value = resultElement.value.slice(0, -1);
-}
- // Check if the key is the Backspace key
- if (key === 'Backspace') {
-    backspace();
- }
